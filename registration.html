@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register/Schedule</title>
+	<!!------------!!>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!!------------!!>
+	<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
+</head>
+
+<body id="registrationPage">
+
+<div class="container">
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="index.html"><img src="img/bEdgeV2.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Go Back</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+	<div class="row">
+
+<div class="col-md-8">
+<h1> Registration/Schedule</h1>
+<p class="lead">Fill out the following fields:</p>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFName">First Name</label>
+    <input type="text" class="form-control" id="inputFName" placeholder="First Name">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputMName">Middle Name</label>
+    <input type="text" class="form-control" id="inputMName" placeholder="Middle Name">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputLName">Last Name</label>
+    <input type="text" class="form-control" id="inputLName" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-row">
+  	<div class="form-group col-md-6">
+    <label for="inputDoB">Date of Birth</label>
+     <input id="datepicker" width="276" placeholder="12/25/98" />
+    <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+	</div>
+	<div class="form-group col-md-3">
+    <label for="inputAge">Age</label>
+    <input type="text" class="form-control" id="inputAge" placeholder="Numbers Only">
+	</div>
+  </div>
+
+  <div class="form-row">
+  	  	<div class="form-group col-md-2">
+  	    <label for="inputGender">Gender:</label>
+  		</div>
+  		<div class="form-group col-md-6">
+  	    <div class="form-check form-check-inline">
+  		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  		<label class="form-check-label" for="inlineRadio1">Male</label>
+		</div>
+		<div class="form-check form-check-inline">
+  		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  		<label class="form-check-label" for="inlineRadio2">Female</label>
+		</div>
+		</div>
+  </div>
+
+ <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputOccupation">Occupation</label>
+    <input type="text" class="form-control" id="inputOccupation" placeholder="Occupation">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputNationality">Nationality</label>
+    <input type="text" class="form-control" id="inputNationality" placeholder="Nationality">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputCStat">Civil Status</label>
+    <input type="text" class="form-control" id="inputCStat" placeholder="Civil Status">
+    </div>
+  </div>
+
+   <div class="form-group">
+   	<label class="lead">Contact Information</label>
+   	<div class="form-group col-md-6">
+      <label for="inputEmailAddress">Email Address</label>
+    <input type="text" class="form-control" id="inputOccupation" placeholder="Email Address">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="ContactNum">Contact Number</label>
+     <div class="form-group">
+    <input type="text" class="form-control" id="ContactNum" placeholder="Contact Number">
+    	</div>
+    </div>
+    
+   </div>
+
+
+   <div class="form-row">
+ 	<div class="form-group col-md-6">
+      <label for="inputRegion">Region</label>
+    <input type="text" class="form-control" id="inputRegion" placeholder="Region">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputProvince">Province</label>
+    <input type="text" class="form-control" id="inputProvince" placeholder="Province">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputCity">City</label>
+    <input type="text" class="form-control" id="inputCity" placeholder="City">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputBrgy">Barangay</label>
+    <input type="text" class="form-control" id="inputBrgy" placeholder="Barangay">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputStNo">Street and No.</label>
+    <input type="text" class="form-control" id="inputStNo" placeholder="Street and No.">
+    </div>
+    <div class="form-group col-md-6">
+     <label for="inputPostal">Postal Code</label>
+    <input type="text" class="form-control" id="inputPostal" placeholder="Postal Code">
+    </div>
+   </div>
+
+     <div class="form-group">
+   	<label for="TravelDetailsGroup">Travel Details:</label>
+   	<div class="form-check row-md-6">
+  	<input class="form-check-input" type="radio" name="exampleRadios" id="RadioWithinCountry" value="option1" checked>
+  	<label class="form-check-label" for="RadioWithinCountry">
+    I'm Travelling within the Country
+ 	</label>
+	</div>
+	<div class="form-check row-md-6">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="RadioOutofCountry" value="option2">
+  	<label class="form-check-label" for="RadioOutofCountry">
+    I'm Travelling out of Country
+  	</label>
+	</div>
+	<div class="form-check row-md-6">
+  	<input class="form-check-input" type="radio" name="exampleRadios" id="NonTravel" value="option3">
+  	<label class="form-check-label" for="NonTravel">
+    Non-Travel Purposes
+  	</label>
+	</div>
+     </div>
+
+
+     <div class="form-row">
+     	  <div class="form-group col-md-6">
+     		<label for="ExposureHistory">Patient Exposure History (Optional)</label>
+     		<input type="text" class="form-control" id="ExposureHistory" placeholder="Exposure History (N/A if none)">
+     </div>
+     </div>
+
+
+     <div class="form-group">
+     	<label for="PatientRecords">Patient Medical Records (Optional)</label>
+
+
+     	<div class="form-check">
+   		
+     	<div class="col-md">
+
+     	<div class="form-row">
+   		<input class="form-check-input" type="checkbox" value="" id="Ailment1">
+  		<label class="form-check-label" for="Ailment1">
+    	Body Pain
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment2">
+  		<label class="form-check-label" for="Ailment2">
+    	Cold
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment3">
+  		<label class="form-check-label" for="Ailment3">
+    	Cough
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment4">
+  		<label class="form-check-label" for="Ailment4">
+    	Loss of Smell/Taste
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment5">
+  		<label class="form-check-label" for="Ailment5">
+    	Shortness of Breath
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment6">
+  		<label class="form-check-label" for="Ailment6">
+    	Suspect Case
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment7">
+  		<label class="form-check-label" for="Ailment7">
+    	Probable Case
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment8">
+  		<label class="form-check-label" for="Ailment8">
+    	Confirmed Case
+  		</label>
+  		</div>
+  		</div>
+
+
+  		<div class="col-md">
+		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment9">
+  		<label class="form-check-label" for="Ailment9">
+    	Cancer
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment10">
+  		<label class="form-check-label" for="Ailment10">
+    	Fatigue
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment11">
+  		<label class="form-check-label" for="Ailment11">
+    	Fever
+  		</label>
+  		</div>
+  		<div class="form-row">
+  		<input class="form-check-input" type="checkbox" value="" id="Ailment12">
+  		<label class="form-check-label" for="Ailment12">
+    	Pregnant
+  		</label>
+  		</div>
+  		</div>
+		</div>
+		</div>
+
+ 		<div class="form-group">
+     	<label for="ClinicRecords">Patient Clinical Records (Optional)</label>
+
+
+     	<div class="form-check">
+   		
+     	<div class="col-md">
+
+     	<div class="form-row">
+   		<input class="form-check-input" type="checkbox" value="" id="ClinicRecords">
+  		<label class="form-check-label" for="ClinicRecords">
+    	I am a Hospital Patient
+  		</label>
+  		</div>
+  	</div>
+  	</div>
+  	</div>
+
+  	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+  	Terms and Conditions
+	</button>
+
+<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Terms and Conditions:</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+     </div>
+     <div class="modal-body">
+        ...
+     </div>
+     <div class="modal-footer">
+     <button type="button" class="btn bg-dark text-white" data-bs-dismiss="modal">Cancel</button>
+     <button type="button" class="btn btn-primary">Submit</button>
+     </div>
+    	</div>
+  		</div>
+		</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md bg-info">
+
+
+</div>
+</div>
+
+
+
+<footer>
+		<div class="row justify-content-center">
+			<div class="col-md-5 text-center">
+				<img src="img/bEdgeV2.png"><br>
+				<i>Providing personalized diagnostic services backed by licensed medical professionals.<br> Choosing wellness and maintaining high standards of customer service.</i>
+				<div class="heading-underline"></div>
+				<p>City hall branch, 121 Malakas St.,<br>
+				East Wind Residences, Quezon City </p>
+				<div class="heading-underline"></div>
+				<strong> Contact Info</strong>
+				<p>0976-0403945<br>
+				blue.edgemedicalgroup@gmail.com</p>
+				<div class="heading-underline"></div>
+
+				<a href="https://www.facebook.com/blue.edgemedical/about/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="col-12 text-center">
+		<hr class="socket">
+		&copy;Blue Edge Medical Group.
+	</div>
+	</footer>
+
+
+
+
+
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+</body>
+
