@@ -1,0 +1,93 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: left;
+  text-align:center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 3px;
+  font-size: 17px;
+
+}
+
+.topnav input[type=submit] {
+  margin-top: 8px;
+  padding: 6px;
+}
+
+/* background image */
+body {
+  background: url(ito.jpg); 
+  background-size: cover;
+}
+
+/* logo */
+#main_menu {
+  position: relative;
+  margin-top: 5px;
+}
+
+.logo_area {
+  width: 100px; 
+  height: 300px; 
+  position: absolute; 
+  left: 40%; top: 0%; 
+  content: "" margin-left: -150px;
+  text-align: center;
+}
+
+/* time and date */
+#main_time {
+  position: relative;
+  margin-top: -300px;
+}
+
+.ct7 {
+  height: 300px;  
+  left: 40%; top: 0%; 
+  content: "" margin-left: -150px;
+}
+
+/* buttons */
+#button {
+  position: relative;
+  margin-top: -40px;
+}
+
+.bot {
+
+  height: 300px;  
+  left: 20%; top: 0%; 
+  margin-left: -290px;
+}
+
+/* table */
+#col{
+  position: relative;
+  margin-top: -40px;
+}
+
+.container {
+
+  height: 50px;  
+  left: -40%; top: 0%; 
+  margin-left: -290px;
+}
